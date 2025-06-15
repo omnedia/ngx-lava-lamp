@@ -7,11 +7,11 @@
 This library is part of the NGXUI ecosystem.
 View all available components at [https://ngxui.com](https://ngxui.com)
 
-`@omnedia/ngx-lava-lamp` is an Angular component for rendering highly-performant, customizable metaball ("lava lamp") visuals using WebGL. It’s ideal for hero backgrounds, section dividers, and eye-catching UI elements. Uses [OGL](https://github.com/oframe/ogl) under the hood for smooth and efficient rendering.
+`@omnedia/ngx-lava-lamp` is an Angular component for rendering highly-performant, customizable lava lamp visuals using WebGL. It’s ideal for hero backgrounds, section dividers, and eye-catching UI elements. Uses [OGL](https://github.com/oframe/ogl) under the hood for smooth and efficient rendering.
 
 ## Features
 
-* Fully hardware-accelerated metaball animation (WebGL via OGL)
+* Fully hardware-accelerated lava lamp animation (WebGL via OGL)
 * Highly configurable: color, speed, ball count, ball size, clump factor, etc.
 * Transparent by default: blends seamlessly into any background
 * Responsive, auto-resizes with container
@@ -24,7 +24,7 @@ View all available components at [https://ngxui.com](https://ngxui.com)
 Install the library:
 
 ```
-npm install @omnedia/ngx-lava-lamp
+npm install @omnedia/ngx-lava-lamp ogl
 ```
 
 ## Usage
@@ -67,10 +67,10 @@ Use the component in your template:
 
 ```html
 <om-lava-lamp
-  [color]="color"                 // main metaball color (hex)
-  [cursorBallColor]="cursorBallColor"   // hover/cursor metaball color (hex)
+  [color]="color"                 // main lava lamp color (hex)
+  [cursorBallColor]="cursorBallColor"   // hover/cursor lava lamp color (hex)
   [speed]="speed"                 // animation speed (default 0.2)
-  [ballCount]="ballCount"         // number of metaballs (default 15)
+  [ballCount]="ballCount"         // number of lava lamp balls (default 15)
   [animationSize]="animationSize" // scale of animation (default 30)
   [clumpFactor]="clumpFactor"     // controls how tight/loose the blobs are
   [cursorBallSize]="cursorBallSize" // size of the cursor/hover ball
@@ -80,10 +80,10 @@ Use the component in your template:
 ></om-lava-lamp>
 ```
 
-* `color`: (string, required) Hex color for the metaballs, e.g. `#ff00aa`
+* `color`: (string, optional) Hex color for the lava lamp, default `#ffffff`
 * `cursorBallColor`: (string, optional) Hex color for the ball that follows mouse/touch
 * `speed`: (number, optional) Animation speed, default `0.2`
-* `ballCount`: (number, optional) Number of metaballs, default `15`
+* `ballCount`: (number, optional) Number of lava lamp balls, default `15`
 * `animationSize`: (number, optional) Animation scaling, default `30`
 * `clumpFactor`: (number, optional) Controls how tightly the blobs cluster, default `1`
 * `cursorBallSize`: (number, optional) Cursor ball size, default `3`
