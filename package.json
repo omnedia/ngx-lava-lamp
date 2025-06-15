@@ -1,0 +1,27 @@
+{
+  "name": "@omnedia/ngx-lava-lamp",
+  "description": "An Angular component for rendering highly-performant, customizable lava lamp visuals using WebGL.",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^18.0.0",
+    "@angular/core": "^18.0.0",
+    "ogl": "^1.0.11"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "keywords": [
+    "npm",
+    "background",
+    "lava",
+    "lamp",
+    "lava lamp",
+    "animation"
+  ],
+  "repository": {
+    "url": "https://github.com/omnedia/ngx-lava-lamp"
+  },
+  "author": "Markus Block (markus.block@omnedia.com)",
+  "license": "MIT"
+}
